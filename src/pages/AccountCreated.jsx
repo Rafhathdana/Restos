@@ -11,18 +11,16 @@ function Verified() {
     }
     return (
         <Container fluid="md" className="signUpContainer">
-            <Row>
-                <Col>
-                    <h2 className="sTitle">Account Verified Successfully</h2>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Button variant="primary" type="submit" onClick={(e) => { closeModal(e) }}>
-                        Continue
-                    </Button>
-                </Col>
-            </Row>
+            <div className="accountcreated">
+
+                <Row>
+                    <Col>
+                        <h2 className="sTitle">Account Verified Successfully</h2>
+                    </Col>
+                </Row>
+                <input type="submit" className="form-control buttonc" id="freeTrial" value="Continue" onClick={(e) => { closeModal(e) }} />
+
+            </div>
         </Container>
     );
 }
