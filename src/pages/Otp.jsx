@@ -6,6 +6,10 @@ function Otp() {
     const navigate = useNavigate();
     function closeModal(e) {
         e.preventDefault();
+        navigate("/");
+    }
+    function accountcreated(e) {
+        e.preventDefault();
         navigate("/accountCreated");
     }
     return (
@@ -24,7 +28,7 @@ function Otp() {
                         </Row>
 
                         <input type="Text" className="inputbox " placeholder="OTP" />
-                        <input type="submit" className="form-control buttonc" id="freeTrial" value="Create account" onClick={(e) => { closeModal(e) }} />
+                        <input type="submit" className="form-control buttonc" id="freeTrial" value="Create account" onClick={(e) => { accountcreated(e) }} />
 
             </div>
         </Container>

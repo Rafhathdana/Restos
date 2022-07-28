@@ -12,10 +12,16 @@ function LandingPage() {
         e.preventDefault();
         setShowSuccessModal(true);
     }
-    function closeModal(e) {
+    function otpUser(e) {
         e.preventDefault();
         setShowSuccessModal(false);
         navigate("/otp");
+    }
+    
+    function closeModal(e) {
+        e.preventDefault();
+        setShowSuccessModal(false);
+        navigate("/");
     }
     return (
         <Container fluid="md" className="mainComponent">
@@ -148,7 +154,7 @@ function LandingPage() {
                             </Col>
                         </Row>
                         <div className='savebutton'>
-                            <Button className='d-block saveBtn' id="continue" onClick={(e) => { closeModal(e) }} >Continue</Button>
+                            <Button className='d-block saveBtn' id="continue" onClick={(e) => { otpUser(e) }} >Continue</Button>
                         </div>
                     </div>
 

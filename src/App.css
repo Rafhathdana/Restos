@@ -231,7 +231,7 @@
     color: #270D41;
 }
 .backward{
-    font-size: 40px;
+    font-size: 30px;
      margin-bottom: 30px;
     background-color: white;
     color: #000000;
@@ -323,4 +323,17 @@
 
 .wrapright {
     float: right;
+  }
+
+  /* .....modal dashboard.... */
+.modalin{
+    padding: 10px;
+}
+  .rightmodal{
+    float: right;
+    max-width: 50%;
+  }
+  .leftmodal{
+    float: left;
+    max-width: 50%;
   }
