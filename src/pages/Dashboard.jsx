@@ -81,17 +81,19 @@ function Dashboard() {
                             </div>
 
                             <div fluid="md" className="modalin">
-                                <div className="modaldivide">
-                                    <div className="leftmodal">
-                                        <h4>Upload your restaurant logo</h4>
-                                    </div>
-                                    <form id="myfor" onSubmit={handleSubmit} encType='multipart/form-data'>
+                                <form id="myfor" onSubmit={handleSubmit} encType='multipart/form-data'>
+                                    <div className="modaldivide">
+                                        <div className="leftmodal">
+                                            <h4>Upload your restaurant logo</h4>
+                                            <p>(maximum 320kb)</p>                                      
+                                        </div>
                                         <div className="rightmodal">
                                             <div className="item">
                                                 <input
                                                     type="file"
                                                     accept=".png, .jpg, .jpeg"
                                                     name="photo"
+                                                    className="imageupload"
                                                     onChange={(e) => setphoto(e.target.files[0])}
                                                 />
 
@@ -99,15 +101,15 @@ function Dashboard() {
                                             </div>
 
                                         </div>
-                                        <div className="modalhead">
-                                            <p className="">select color Theme for Your Store.</p>
-
-
-                                        </div>
-                                        <Button className='form-control buttonc' id="save" onClick={(e) => { closeModal(e) }} >Save</Button>
-                                    </form>
-                                </div>
+                                    </div>
+                                    <div className="modalhead">
+                                        <h5 className="">Select Color theme for your store</h5>
+                                        
+                                    </div>
+                                    <Button className='form-control buttonc' id="save" onClick={(e) => { closeModal(e) }} >Save</Button>
+                                </form>
                             </div>
+
                         </div>
                     </Modal.Body>
                 </Modal>
@@ -168,7 +170,7 @@ function Dashboard() {
                     </Button>
                 </div>
             </Container>
-            <Footer/>
+            <Footer />
 
 
         </div>

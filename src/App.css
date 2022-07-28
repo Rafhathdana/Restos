@@ -329,11 +329,20 @@
 .modalin{
     padding: 10px;
 }
-  .rightmodal{
-    float: right;
-    max-width: 50%;
-  }
-  .leftmodal{
+.leftmodal{
     float: left;
-    max-width: 50%;
+    max-width: 45%;
+}
+.rightmodal{
+    float: right;
+    max-width: 45%;
+    border-style: dashed;
+  }
+
+  .modalhead{
+    min-width:80%;
+    float: left;
+  }
+  .imageupload{
+    content: Browse Image;
   }
