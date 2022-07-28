@@ -1,3 +1,7 @@
+
+.body{
+    font-family:Poppins;
+}
 .mainLogo {
     height: 2rem;
     margin-right: 9px;
@@ -289,3 +293,34 @@
    
     border-radius: 6px;
 }
+
+
+/* ..... dashboard..... */
+.bold{
+    font-weight: bold;
+}
+.dashboard{
+    padding: 25px;
+}
+.circletick{
+    position: relative;
+    background: #E4E4E4;
+    width: 30px;
+    height: 30px; 
+    border-radius: 100%;
+}
+.checktack{
+    position: absolute;
+    transform: rotate(50deg) translate(-50%, -50%);
+    left: 20%;
+    top: 45%;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    height: 20px;
+    width: 11px;
+    border-radius: 1px;
+}
+
+.wrapright {
+    float: right;
+  }

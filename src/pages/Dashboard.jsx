@@ -3,6 +3,8 @@ import React from 'react';
 import { Container, Row, Col, Modal, Button, InputGroup, Form } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
+import Footer from '../components/footer';
+
 
 function Dashboard() {
     const [showSuccessModal, setShowSuccessModal] = useState(false)
@@ -28,15 +30,16 @@ function Dashboard() {
         navigate("/dashboard");
     }
     return (
-        <Container fluid="md" className="signUpContainer">
+        <div>
+        <Container fluid="md" className="dashboard">
             <Row>
                 <Col>
-                    <h2 className="sTitle">Dashboard</h2>
+                    <h2 className="sTitle bold">Dashboard</h2>
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <h6 className="sTitle">Welcome to the Rokeat</h6>
+                    <h4 className="sTitle">Welcome to the Restos</h4>
                 </Col>
             </Row>
             <Row>
@@ -46,10 +49,17 @@ function Dashboard() {
             </Row>
             <div className="ibox mb-3">
                 <Button
-                    className="dash-button" onClick={(e) => { customStore(e) }}
+                    className="dash-button " onClick={(e) => { customStore(e) }}
                 >
                     Customize Your online Store
                     {/* <FaBeer /> */}
+                <div className="wrapright">
+                    <div className="circletick ">
+                        <div className="checktack">
+
+                        </div>
+                    </div>
+                </div>
                 </Button>
             </div>
             <Modal
@@ -61,9 +71,11 @@ function Dashboard() {
 
                 <Modal.Body>
                     <div fluid="md" className="">
+                    <div className="backward" onClick={(e) => { closeModal(e) }}>X
+                        </div>
                         <Row>
                             <Col>
-                                <h2 className="sTitle">Upload your restaurant logo</h2>
+                                <h4 className="">Upload your restaurant logo</h4>
                             </Col>
                         </Row>
 
@@ -83,6 +95,13 @@ function Dashboard() {
                     className="dash-button" onClick={(e) => { restaurantDetails(e) }}
                 >
                     Add Restaurant details
+                    <div className="wrapright">
+                    <div className="circletick ">
+                        <div className="checktack">
+
+                        </div>
+                    </div>
+                </div>
                 </Button>
             </div>
             <Modal
@@ -119,12 +138,18 @@ function Dashboard() {
                     className="dash-button" onClick={(e) => { addProduct(e) }}
                 >
                     Add Products
+                    <div className="wrapright">
+                    <div className="circletick ">
+                        <div className="checktack">
+                        </div>
+                    </div>
+                </div>
                 </Button>
             </div>
-
-
         </Container>
-    );
-}
 
+    
+</div>
+);
+}
 export default Dashboard;
