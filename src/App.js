@@ -14,6 +14,7 @@ import Otp from "./pages/Otp";
 import Verified from "./pages/AccountCreated";
 import Dashboard from "./pages/Dashboard";
 import EmptyProduct from "./pages/ProductEmpty";
+import AddProduct from "./pages/AddProduct";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/accountcreated" element={<Verified />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/empty" element={<EmptyProduct />} />
+          <Route path="/addproduct" element={<AddProduct />} />
         </Routes>
         {/* <Footer /> */}
       </Router>

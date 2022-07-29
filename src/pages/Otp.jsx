@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import { Container, Row, Col, InputGroup, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import "../App.css";
 function Otp() {
     const navigate = useNavigate();

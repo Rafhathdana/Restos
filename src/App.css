@@ -346,3 +346,22 @@
   .imageupload{
     content: Browse Image;
   }
+
+
+
+  /* .......add product....... */
+  .producttitle{
+      color:#270D41;
+      font-weight: 650;
+      margin-bottom: 30px;
+    }
+.margindec{
+    color: #270D41;
+}
+.checkboxf{
+    display: flex;
+    flex-direction: column;
+}
+.grey{
+    color: #707070;
+}
