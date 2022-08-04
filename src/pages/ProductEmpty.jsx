@@ -1,8 +1,16 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import React from 'react';
 import astro from "../Assets/img/astraunet2.svg";
+import { useNavigate } from "react-router-dom";
+
 
 function EmptyProduct() {
+    const navigate = useNavigate();
+
+    function closeModal(e) {
+        e.preventDefault();
+        navigate("/addproduct");
+    }
     return (
         <Container fluid="md" className="mainComponent">
             <Row>
@@ -20,11 +28,14 @@ function EmptyProduct() {
             </Row>
             <Row>
                 <Col>
-                    <Button variant="primary" type="submit" >
+                    <Button variant="primary" type="submit" onClick={(e) => { closeModal(e) }} >
                         Add Your First Product
                     </Button>
                 </Col>
             </Row>
+
+
+
         </Container>
     );
 }

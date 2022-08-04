@@ -1,7 +1,8 @@
-
-.body{
-    font-family:Poppins;
+.body {
+    font-family: 'Poppins';
+    font-style: normal;
 }
+
 .mainLogo {
     height: 2rem;
     margin-right: 9px;
@@ -220,50 +221,60 @@
     margin-bottom: 80px;
     padding-top: 30px;
 }
+
 .formfun {
     padding-left: 3%;
     padding-right: 3%;
     /* gap: 10px; */
 }
-.sTitle{
+
+.sTitle {
     font-weight: SemiBold;
     margin-bottom: 40px;
     color: #270D41;
 }
-.backward{
+
+.backward {
     font-size: 30px;
-     margin-bottom: 30px;
+    margin-bottom: 30px;
     background-color: white;
     color: #000000;
     cursor: pointer;
 }
-.saveBtn{
+
+.saveBtn {
     background-color: #5C0FB6;
     width: auto;
     padding: 10px 35px 10px 35px;
     font-weight: none;
     font-size: 15px;
     border-radius: 5px;
-    
+
 }
-.savebutton{
+
+.savebutton {
     float: right;
 }
-.lin{
+
+.lin {
     margin-bottom: 5px;
     margin-top: 40px;
 }
 
 /* ------***otp**------- */
-.otpspace{
+.otpspace {
     margin-bottom: 70px;
-    padding:3%;
+    padding: 3%;
 }
 
 /* _______***account created****______ */
-.accountcreated{
+.accountcreated {
     margin-bottom: 80px;
-    padding:25%;
+    padding: 25%;
+}
+
+.center {
+    align-items: center;
 }
 
 .wrapper {
@@ -271,17 +282,17 @@
     align-items: center;
     justify-content: center;
     min-height: 20vh;
-  }
-  
-  .circle {
+}
+
+.circle {
     position: relative;
     background: #5C0FB6;
     border-radius: 100%;
     height: 70px;
     width: 70px;
-  }
-  
-  .checkMark {
+}
+
+.checkMark {
     position: absolute;
     transform: rotate(50deg) translate(-50%, -50%);
     left: 27%;
@@ -290,26 +301,29 @@
     width: 22px;
     border-bottom: 8px solid #fff;
     border-right: 8px solid #fff;
-   
+
     border-radius: 6px;
 }
 
 
 /* ..... dashboard..... */
-.bold{
+.bold {
     font-weight: bold;
 }
-.dashboard{
+
+.dashboard {
     padding: 25px;
 }
-.circletick{
+
+.circletick {
     position: relative;
     background: #E4E4E4;
     width: 30px;
-    height: 30px; 
+    height: 30px;
     border-radius: 100%;
 }
-.checktack{
+
+.checktack {
     position: absolute;
     transform: rotate(50deg) translate(-50%, -50%);
     left: 20%;
@@ -323,45 +337,93 @@
 
 .wrapright {
     float: right;
-  }
+}
 
-  /* .....modal dashboard.... */
-.modalin{
+/* .....modal dashboard.... */
+.modalin {
     padding: 10px;
 }
-.leftmodal{
+
+.leftmodal {
     float: left;
     max-width: 45%;
 }
-.rightmodal{
+
+.rightmodal {
     float: right;
     max-width: 45%;
     border-style: dashed;
-  }
+}
 
-  .modalhead{
-    min-width:80%;
+.modalhead {
+    min-width: 80%;
     float: left;
-  }
-  .imageupload{
+}
+
+.imageupload {
     content: Browse Image;
-  }
+}
 
 
 
-  /* .......add product....... */
-  .producttitle{
-      color:#270D41;
-      font-weight: 650;
-      margin-bottom: 30px;
-    }
-.margindec{
+/* .......add product....... */
+.producttitle {
     color: #270D41;
+    font-weight: 650;
+    margin-bottom: 30px;
 }
-.checkboxf{
+
+.margindec {
+    color: #270D41;
+    padding-left: 10px;
+}
+
+.checkbox {
+    align-items: center;
+    height: 23px;
+    width: 23px;
+}
+
+.checkboxf {
     display: flex;
-    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
 }
-.grey{
+
+.grey {
     color: #707070;
+}
+
+.productdetails {
+    padding: 10px;
+    
+    height: 170px;
+}
+
+.productdetai {
+    border: 1px solid #FFEFF8;
+    resize: none;
+    width: 100%;
+    height: 170px;
+    padding: 15px;
+}
+.extra{
+    margin-top: 10px;
+}
+.imagehead{
+    margin-top: 30px;
+}
+.varientprice{
+min-width:40%;
+}
+.varientname{
+min-width: 60%;
+}
+.varienthead{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+.clear{
+    clear: both;
 }

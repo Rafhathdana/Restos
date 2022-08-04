@@ -15,7 +15,7 @@ function Verified() {
 
                 <Row>
                     <Col>
-                        <h2 className="sTitle">Account Verified Successfully</h2>
+                        <h2 className="sTitle center">Account Verified Successfully</h2>
                     </Col>
                 </Row>
                 <div class="wrapper">
