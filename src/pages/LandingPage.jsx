@@ -38,12 +38,11 @@ function LandingPage() {
                     <p className="heroPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente odit sit ipsa illo reiciendis iste consequatur earum cupiditate. Animi aperiam deleniti ad consectetur sed minima quaerat modi sit veniam dolorum.</p>
                 </Col>
             </Row>
-            <div className="form-group row justify-content-end ">
-                <div className="col-sm-3 form">
+                <div className="form">
                     <input type="Text" className="inputbox " placeholder="Enter Your Shop Name" />
                     <input type="submit" className="form-control buttonc" id="freeTrial" value="Start Free Trail" onClick={(e) => { saveUser(e) }} />
                 </div>
-            </div>
+            
             <div className="hrline"></div>
             <div>
                 <h4 className="promotitle">Accepting all forms of orders through a single system.</h4>

@@ -80,7 +80,7 @@ function AddProduct() {
                 <h6 className="margindec clear">Price Details</h6>
                 <div className='varienthead'>
                     <div className='varientname' >
-                            <input type="Text" className="inputbox" placeholder="MRP" />
+                            <input type="Number" className="inputbox" placeholder="MRP" />
                        
                     </div>
                     <div className='varientprice'>

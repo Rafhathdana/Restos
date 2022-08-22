@@ -18,9 +18,9 @@ function Verified() {
                         <h2 className="sTitle center">Account Verified Successfully</h2>
                     </Col>
                 </Row>
-                <div class="wrapper">
-  <div class="circle">
-    <div class="checkMark"></div>
+                <div className="wrapper">
+  <div className="circle">
+    <div className="checkMark"></div>
   </div>
 </div>
                 <input type="submit" className="form-control buttonc" id="freeTrial" value="Continue" onClick={(e) => { closeModal(e) }} />

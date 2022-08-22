@@ -4,6 +4,7 @@ import { Container, Row, Col, Modal, Button, InputGroup, Form } from 'react-boot
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import Footer from '../components/footer';
+import ImageUploader from '../components/ImageUploader';
 
 
 function Dashboard() {
@@ -29,11 +30,8 @@ function Dashboard() {
         setshowShopAddress(false);
         navigate("/dashboard");
     }
-    const [photo, setphoto] = useState("");
     const handleSubmit = (e) => {
         e.preventDefault();
-        const formData = new FormData();
-        formData.append('photo', photo);
     }
     return (
         <div>
@@ -89,22 +87,9 @@ function Dashboard() {
                                         </div>
                                         <div className="rightmodal">
                                             <div className="item">
-                                                <input
-                                                    type="file"
-                                                    accept=".png, .jpg, .jpeg"
-                                                    name="photo"
-                                                    className="imageupload"
-                                                    onChange={(e) => setphoto(e.target.files[0])}
-                                                />
-
-
+                                            <ImageUploader />
                                             </div>
-
                                         </div>
-                                    </div>
-                                    <div className="modalhead">
-                                        <h5 className="">Select Color theme for your store</h5>
-                                        
                                     </div>
                                     <Button className='form-control buttonc' id="save" onClick={(e) => { closeModal(e) }} >Save</Button>
                                 </form>
