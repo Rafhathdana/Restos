@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.600cf2e4.css",
+    "main.js": "/static/js/main.837495aa.js",
+    "static/media/main-image.png": "/static/media/main-image.669d779998eecd40e60b.png",
+    "static/media/astraunet2.svg": "/static/media/astraunet2.76c9346dec8b3389157ebe13e9c721ff.svg",
+    "static/media/logo.png": "/static/media/logo.16e89c7f81fd7c404fd8.png",
+    "index.html": "/index.html",
+    "main.600cf2e4.css.map": "/static/css/main.600cf2e4.css.map",
+    "main.837495aa.js.map": "/static/js/main.837495aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.600cf2e4.css",
+    "static/js/main.837495aa.js"
+  ]
+}
