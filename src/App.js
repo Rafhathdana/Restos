@@ -15,6 +15,7 @@ import Verified from "./pages/AccountCreated";
 import Dashboard from "./pages/Dashboard";
 import EmptyProduct from "./pages/ProductEmpty";
 import AddProduct from "./pages/AddProduct";
+import MainDashboard from "./pages/MainDashboard";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/empty" element={<EmptyProduct />} />
           <Route path="/addproduct" element={<AddProduct />} />
+          <Route path="/maindashboard" element={<MainDashboard />} />
         </Routes>
         {/* <Footer /> */}
       </Router>
