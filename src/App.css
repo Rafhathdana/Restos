@@ -1,7 +1,3 @@
-.body {
-    font-family: 'Poppins';
-    font-style: normal;
-}
 
 .mainLogo {
     height: 2rem;
@@ -426,4 +422,19 @@ min-width: 60%;
 }
 .clear{
     clear: both;
+}
+/* .....  onboarding  .... */
+
+@media (max-width: 576px) {
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 80%;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 42%;
+    }
 }
