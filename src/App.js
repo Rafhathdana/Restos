@@ -14,6 +14,8 @@ import AddProduct from "./pages/AddProduct";
 import MainDashboard from "./pages/MainDashboard";
 import OnBoarding from "./pages/delivery/OnBoarding";
 import Location from "./pages/delivery/Location";
+import Order from "./pages/Order";
+
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
           <Route path="/maindashboard" element={<MainDashboard />} />
           <Route path="/onBoarding" element={<OnBoarding />} />
           <Route path="/location" element={<Location />} />
+          <Route path="/order" element={<Order />} />
         </Routes>
         {/* <Footer /> */}
       </Router>
