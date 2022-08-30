@@ -1,7 +1,6 @@
 import React from 'react';
 // import { FaBeer } from 'react-icons/fa';
 import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
-import Footer from '../components/footer';
 import Select from 'react-select';
 import { useState } from 'react';
 import ImageUploader from '../components/ImageUploader';
@@ -29,8 +28,11 @@ function AddProduct() {
         setShowSuccessModal(false);
         navigate("/addproduct");
     }
+    function products(e) {
+        e.preventDefault();
+        navigate("/product");
+    }
     return (
-        <div>
             <Container fluid="md" className="dashboard">
                 <Row>
                     <Col>
@@ -87,7 +89,7 @@ function AddProduct() {
                             <input type="Number" className="inputbox" placeholder="Selling Price" />
                         </div>
                 </div>
-                <Button className='form-control buttonc' id="continue" onClick={(e) => { varient(e) }} >Add Product</Button>
+                <Button className='form-control buttonc' id="continue" onClick={(e) => { products(e) }} >Add Product</Button>
                           
                 <Modal
                     show={showSuccessModal}
@@ -136,10 +138,6 @@ function AddProduct() {
 
 
             </Container>
-            <Footer />
-
-
-        </div >
     );
 }
 export default AddProduct;

@@ -18,10 +18,10 @@ function CustomNavbar() {
                             <Link to="/dashboard"><span className='px-2' >Dashboard</span></Link>
                         </Navbar.Text>
                         <Navbar.Text>
-                            <Link to="/empty"><span className='px-2' >Order</span></Link>
+                            <Link to="/order"><span className='px-2' >Order</span></Link>
                         </Navbar.Text>
                         <Navbar.Text>
-                            <Link to="/"><span className='px-2' >Products</span></Link>
+                            <Link to="/product"><span className='px-2' >Products</span></Link>
                         </Navbar.Text>
                         <Navbar.Text>
                             <Link to="/"><span className='px-2' >Categories</span></Link>

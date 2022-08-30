@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-// import Footer from './components/footer';
+import Footer from './components/footer';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CustomNavbar from "./components/Navbar";
 import LandingPage from "./pages/LandingPage";
@@ -15,6 +15,7 @@ import MainDashboard from "./pages/MainDashboard";
 import OnBoarding from "./pages/delivery/OnBoarding";
 import Location from "./pages/delivery/Location";
 import Order from "./pages/Order";
+import Products from "./pages/Products";
 
 
 function App() {
@@ -34,8 +35,9 @@ function App() {
           <Route path="/onBoarding" element={<OnBoarding />} />
           <Route path="/location" element={<Location />} />
           <Route path="/order" element={<Order />} />
+          <Route path="/product" element={<Products />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );

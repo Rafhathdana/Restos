@@ -3,7 +3,6 @@ import React from 'react';
 import { Container, Row, Col, Modal, Button, InputGroup, Form } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
-import Footer from '../components/footer';
 import ImageUploader from '../components/ImageUploader';
 
 
@@ -34,7 +33,6 @@ function Dashboard() {
         e.preventDefault();
     }
     return (
-        <div>
             <Container fluid="md" className="dashboard">
                 <Row>
                     <Col>
@@ -155,10 +153,6 @@ function Dashboard() {
                     </Button>
                 </div>
             </Container>
-            <Footer />
-
-
-        </div>
     );
 }
 export default Dashboard;
