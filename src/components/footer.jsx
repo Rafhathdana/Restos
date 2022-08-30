@@ -3,12 +3,15 @@ import { Icon } from '@iconify/react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 const Container = styled.div`
- display: flex;
+ /* display: flex; */
 position:sticky;
 bottom:0;
 background-color: white;
-position: fixed;
 width:100%;
+height:58px;
+`
+const Contain = styled.div`
+ display: flex;
 `
 const Item= styled.div`
 width :33%;
@@ -26,9 +29,12 @@ function Footer() {
     const navigate = useNavigate();
     return (
             <Container>
+                <Contain>
+
             <Item><Icon icon="ph:house-simple" height="38"/>Dashboard</Item>
             <Item onClick={() => navigate('/order')}><Icon icon="ph:receipt" height="40"/>Orders</Item>
             <Item onClick={() => navigate('/product')}><Icon icon="ph:receipt" height="40"/>Product</Item>
+                </Contain>
             </Container>
     );
 }

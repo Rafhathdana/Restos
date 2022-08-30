@@ -16,11 +16,14 @@ import OnBoarding from "./pages/delivery/OnBoarding";
 import Location from "./pages/delivery/Location";
 import Order from "./pages/Order";
 import Products from "./pages/Products";
-
-
+import styled from "styled-components";
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  `;
 function App() {
   return (
-    <div className="App">
+    <Container>
       <Router>
         <CustomNavbar />
         <Routes>
@@ -39,7 +42,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    </div>
+    </Container>
   );
 }
 
