@@ -16,6 +16,7 @@ import OnBoarding from "./pages/delivery/OnBoarding";
 import Location from "./pages/delivery/Location";
 import Order from "./pages/Order";
 import Products from "./pages/Products";
+import Categories from "./pages/Categories";
 import styled from "styled-components";
 const Container = styled.div`
   display: flex;
@@ -39,6 +40,7 @@ function App() {
           <Route path="/location" element={<Location />} />
           <Route path="/order" element={<Order />} />
           <Route path="/product" element={<Products />} />
+          <Route path="/category" element={<Categories/>} />
         </Routes>
         <Footer />
       </Router>

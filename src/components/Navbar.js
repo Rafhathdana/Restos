@@ -24,7 +24,7 @@ function CustomNavbar() {
                             <Link to="/product"><span className='px-2' >Products</span></Link>
                         </Navbar.Text>
                         <Navbar.Text>
-                            <Link to="/"><span className='px-2' >Categories</span></Link>
+                            <Link to="/category"><span className='px-2' >Categories</span></Link>
                         </Navbar.Text>
                         <Navbar.Text>
                             <Link to="/"><span className='px-2' >Delivery Boys</span></Link>
