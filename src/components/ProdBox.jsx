@@ -17,19 +17,19 @@ margin: 0px 20px;
 const ImageHead = styled.div`
 margin: 0px 20px;
 width:63px;
-font-size:${(props)=>props.type==="Head" ? "16px":"14px"};
-font-weight:${(props)=>props.type==="Head" ? "500":"400"};
+font-size:${(props) => props.type === "Head" ? "16px" : "14px"};
+font-weight:${(props) => props.type === "Head" ? "500" : "400"};
 `
 const Heading = styled.h4`
 margin: auto 10px auto ;
-font-size:${(props)=>props.type==="Head" ? "16px":"14px"};
-font-weight:${(props)=>props.type==="Head" ? "500":"400"};
+font-size:${(props) => props.type === "Head" ? "16px" : "14px"};
+font-weight:${(props) => props.type === "Head" ? "500" : "400"};
 `
 const Rate = styled.h4`
 color:#270D41;
-margin:${(props)=>props.type==="Head" ? "auto 47px auto auto":"auto 60px auto auto"};
-font-size:${(props)=>props.type==="Head" ? "16px":"14px"};
-font-weight:${(props)=>props.type==="Head" ? "500":"400"};
+margin:${(props) => props.type === "Head" ? "auto 47px auto auto" : "auto 60px auto auto"};
+font-size:${(props) => props.type === "Head" ? "16px" : "14px"};
+font-weight:${(props) => props.type === "Head" ? "500" : "400"};
     `
 
 const Hr = styled.div`
@@ -42,13 +42,12 @@ width:95%;
 `
 const ProdBox = () => {
     return (
-
         <Container >
             <HeadBox>
 
                 <Image alt="image " src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/lkn0extnvjywfts4q7gw" />
-                    <Heading>Hamburger</Heading>
-                    <Rate>146</Rate>
+                <Heading>Hamburger</Heading>
+                <Rate>146</Rate>
             </HeadBox>
             <Hr />
         </Container>
@@ -63,8 +62,8 @@ export const ProbHead = () => {
         <Container>
             <HeadBox>
                 <ImageHead type="Head">Image</ImageHead>
-                    <Heading type="Head">Product Name</Heading>
-                    <Rate type="Head">Price</Rate>
+                <Heading type="Head">Product Name</Heading>
+                <Rate type="Head">Price</Rate>
             </HeadBox>
         </Container>
     )

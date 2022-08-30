@@ -17,18 +17,18 @@ const MainBorder = styled.div`
   justify-content: center;
   align-items: center;
 `
-const Order= () => {
+const Order = () => {
   return (
     <Container>
       <Heading>Orders</Heading>
       <MainBorder>
-      <Box />
-      <Box />
-      <Box />
-      <Box />
-      <Box />
-      <Box />
-      <Box />
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+        <Box />
       </MainBorder>
     </Container>
   )

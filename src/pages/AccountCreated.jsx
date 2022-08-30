@@ -19,10 +19,10 @@ function Verified() {
                     </Col>
                 </Row>
                 <div className="wrapper">
-  <div className="circle">
-    <div className="checkMark"></div>
-  </div>
-</div>
+                    <div className="circle">
+                        <div className="checkMark"></div>
+                    </div>
+                </div>
                 <input type="submit" className="form-control buttonc" id="freeTrial" value="Continue" onClick={(e) => { closeModal(e) }} />
 
             </div>

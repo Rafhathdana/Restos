@@ -13,7 +13,7 @@ height:58px;
 const Contain = styled.div`
  display: flex;
 `
-const Item= styled.div`
+const Item = styled.div`
 width :33%;
 margin:auto;
 display: flex;
@@ -28,14 +28,14 @@ cursor: pointer;
 function Footer() {
     const navigate = useNavigate();
     return (
-            <Container>
-                <Contain>
+        <Container>
+            <Contain>
 
-            <Item><Icon icon="ph:house-simple" height="38"/>Dashboard</Item>
-            <Item onClick={() => navigate('/order')}><Icon icon="ph:receipt" height="40"/>Orders</Item>
-            <Item onClick={() => navigate('/product')}><Icon icon="ph:receipt" height="40"/>Product</Item>
-                </Contain>
-            </Container>
+                <Item><Icon icon="ph:house-simple" height="38" />Dashboard</Item>
+                <Item onClick={() => navigate('/order')}><Icon icon="ph:receipt" height="40" />Orders</Item>
+                <Item onClick={() => navigate('/product')}><Icon icon="ph:receipt" height="40" />Product</Item>
+            </Contain>
+        </Container>
     );
 }
 

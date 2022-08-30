@@ -70,8 +70,8 @@ const MainDashboard = () => {
       </Outer>
       <SubHeading>Recent Orders</SubHeading>
       <MainBorder>
-      <Box />
-      <Box />
+        <Box />
+        <Box />
       </MainBorder>
     </Container>
   )
