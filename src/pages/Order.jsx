@@ -24,6 +24,11 @@ const Order= () => {
       <MainBorder>
       <Box />
       <Box />
+      <Box />
+      <Box />
+      <Box />
+      <Box />
+      <Box />
       </MainBorder>
     </Container>
   )

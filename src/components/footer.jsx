@@ -4,6 +4,11 @@ import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 const Container = styled.div`
  display: flex;
+position:sticky;
+bottom:0;
+background-color: white;
+position: fixed;
+width:100%;
 `
 const Item= styled.div`
 width :33%;
@@ -21,9 +26,9 @@ function Footer() {
     const navigate = useNavigate();
     return (
             <Container>
-            <Item><Icon icon="ph:house-simple" height="42"/>Dashboard</Item>
-            <Item onClick={() => navigate('/order')}><Icon icon="ph:receipt" height="45"/>Orders</Item>
-            <Item onClick={() => navigate('/product')}><Icon icon="ph:receipt" height="45"/>Product</Item>
+            <Item><Icon icon="ph:house-simple" height="38"/>Dashboard</Item>
+            <Item onClick={() => navigate('/order')}><Icon icon="ph:receipt" height="40"/>Orders</Item>
+            <Item onClick={() => navigate('/product')}><Icon icon="ph:receipt" height="40"/>Product</Item>
             </Container>
     );
 }
