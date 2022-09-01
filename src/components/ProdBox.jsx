@@ -14,6 +14,12 @@ width:63px;
 border-radius: 7px;
 margin: 0px 20px;
 `
+const DeliveryImage = styled.img`
+height:50px;
+width:50px;
+border-radius: 50%;
+margin: 0px 20px;
+`
 const ImageHead = styled.div`
 margin: 0px 20px;
 width:63px;
@@ -65,6 +71,21 @@ export const ProbHead = () => {
                 <Heading type="Head">Product Name</Heading>
                 <Rate type="Head">Price</Rate>
             </HeadBox>
+        </Container>
+    )
+}
+
+export const DeliveryBox = () => {
+    return (
+
+        <Container>
+            <HeadBox>
+            <DeliveryImage alt="image " src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/lkn0extnvjywfts4q7gw" />
+                <Heading>Jonathan Young</Heading>
+                <Rate>Price</Rate>
+            </HeadBox>
+            
+            <Hr />
         </Container>
     )
 }

@@ -27,7 +27,7 @@ function CustomNavbar() {
                             <Link to="/category"><span className='px-2' >Categories</span></Link>
                         </Navbar.Text>
                         <Navbar.Text>
-                            <Link to="/"><span className='px-2' >Delivery Boys</span></Link>
+                            <Link to="/deliveryboys"><span className='px-2' >Delivery Boys</span></Link>
                         </Navbar.Text>
                         <Navbar.Text>
                             <Link to="/"><span className='px-2' >Delivery Collactables</span></Link>
